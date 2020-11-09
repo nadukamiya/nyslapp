@@ -82,7 +82,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
 
 #calendar{
   position: absolute;
@@ -90,7 +90,7 @@ export default {
   left:0;
   margin-bottom: 10%;
 }
-element.style {
+.events-wrapper {
     background-color: yellowgreen;
 }
 </style>
