@@ -1,35 +1,36 @@
 <template>
   <div id="app">
 
-    <!--     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    <!-- <router-view/> -->
-    <div id=header>
-      <img id="logo" src="./assets/nysl_logo.png" alt="logo">
-      <h1 >Northside Youth <br> Soccer League</h1>
-    </div>
-    <div>
-      <router-view/>
-    </div>    
-      <div id="nav-menu">
-        <router-link to="/">
-        <i id="ihome" class="fas fa-home"></i>
-      </router-link>
-      <router-link to="/about">
-        <i id="iabout" class="fas fa-info-circle"></i>
-      </router-link>
-      <router-link to="/calendar">
-        <i id="icalendar" class="far fa-calendar-alt"></i>
-      </router-link>
-      <router-link to="/location">
-        <i id="imaps" class="fas fa-map-marked-alt"></i>
-      </router-link>
-      <router-link to="/user">
-        <i class="fas fa-user"></i>
-      </router-link>    
+      <!--     <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </div> -->
+      <!-- <router-view/> -->
+      <div id=header>
+        <img id="logo" src="./assets/nysl_logo.png" alt="logo">
+        <h1 >Northside Youth <br> Soccer League</h1>
       </div>
+      <div>
+        <router-view/>
+      </div>    
+        <div id="nav-menu">
+            <router-link to="/">
+            <i id="ihome" class="fas fa-home"></i>
+          </router-link>
+          <router-link to="/about">
+            <i id="iabout" class="fas fa-info-circle"></i>
+          </router-link>
+          <router-link to="/calendar">
+            <i id="icalendar" class="far fa-calendar-alt"></i>
+          </router-link>
+          <router-link to="/location">
+            <i id="imaps" class="fas fa-map-marked-alt"></i>
+          </router-link>
+          <router-link to="/user">
+            <i class="fas fa-user"></i>
+          </router-link>    
+        </div>
+        
     </div>
   
 </template>
@@ -55,27 +56,29 @@ body{
 }
 #header {
       background: yellowgreen;
-      height: 18%;
+      height: 20%;
       width: 100vw;
       margin: 0;
       top: 0;
       right: 0;
       position: absolute;
-      border-bottom: black 2em solid;
-      z-index: 90;
+      border-bottom: black 1.75em solid;
+      z-index: 999;
 }
+
 
 #logo{
   position: absolute;
   height: 6em;
   left:1em;
   top: 0.35em;
+  z-index: 900;
 }
 
 h1{
   position: absolute;
-  font-size: 1.7em;
-  top: 0.5em;
+  font-size: 1.75em;
+  top: 0.7em;
   left: 5em;
   margin: 0;
   font-weight: bold;
@@ -86,7 +89,7 @@ h1{
   width: 90%;
   height: 7%;
   background-color: yellowgreen;
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
   top: 90%;
   margin-bottom: 10%;
@@ -109,5 +112,31 @@ i{
     
   }
 
+
+  @media (orientation: landscape) { 
+    #header{
+      height: 30%;
+      border-bottom: black 1em solid;
+    }
+
+  #nav-menu{
+    height: 20%;
+    width: 40%;
+    margin-bottom: 10%;
+    top: 0%;
+    right:0;
+    position: absolute;
+  }
+
+  h1{
+    font-size: 1.6em;
+  }
+  }
+  @media (max-width: 320px){
+ h1{
+    font-size: 1.4em;
+      left: 5.5em;
+  }
+  }
 
 </style>

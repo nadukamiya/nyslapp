@@ -68,6 +68,7 @@ export default {
   margin:0;
   padding: 0.3em;
   font-size: 1.5em;
+  z-index: 91;
 }
 
 main{
@@ -79,6 +80,23 @@ main{
   font-size: 1em;
 }
 
+#logo{
+  z-index: 999;
+}
 
+
+@media(orientation: landscape) { 
+    #img-header{
+      display: none;
+    }
+    .black{
+      height: 12%;
+      top: 27%;
+    }
+    main{
+      top: 29%;
+    }
+    
+}
 
 </style>

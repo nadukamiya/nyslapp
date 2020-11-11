@@ -24,4 +24,10 @@ export default {
     left: 0;
     margin-left: 10%;
 }
+
+@media(orientation: landscape) { 
+    #location{
+     top:30%;
+    }
+    }
 </style>

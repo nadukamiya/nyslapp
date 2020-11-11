@@ -51,7 +51,7 @@
   background-color: yellowgreen;
   z-index: 99;
   position: absolute;
-  top: 16%;
+  top: 20%;
   text-align: center;
   color: white;
 
@@ -69,7 +69,7 @@ main{
   position: absolute;
   margin-top: 7%;
   margin-bottom: 20%;
-  top: 20%;
+  top: 22%;
   text-align: center;
   font-size: 1rem;
   width: 80%;
@@ -80,5 +80,16 @@ main{
 .white {color:#ffffff;} 
 .green-background {background-color: yellowgreen;}
 
+
+@media (orientation: landscape) { 
+    .green{
+      top: 30%;
+      height: 10%;
+    }
+    main{
+      top:30%;
+      margin-bottom: 2%;
+    }
+    }
 </style> 
 

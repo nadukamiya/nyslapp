@@ -1,6 +1,8 @@
 <template>
-<div id="calendar">
-   <vue-event-calendar :events="demoEvents"></vue-event-calendar>
+<div id="date">
+  <div id="calendar">
+  <vue-event-calendar :events="demoEvents"></vue-event-calendar>
+  </div>   
 </div>
  
 </template>
@@ -84,13 +86,24 @@ export default {
 </script>
 <style>
 
+#date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #calendar{
   position: absolute;
   top:20%;
-  left:0;
   margin-bottom: 10%;
 }
 .events-wrapper {
     background-color: yellowgreen;
 }
+
+@media (min-width: 600px) and (orientation: landscape) { 
+    #calendar{
+      top: 30%;
+      height: 10%;
+    }
+    }
 </style>

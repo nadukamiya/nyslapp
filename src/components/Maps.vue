@@ -1,6 +1,6 @@
 <template>
 <div id="maps">
-  <iframe src="https://www.google.com/maps/d/embed?mid=1joZo-pbJlJnxdjn32AattA3cFJNV2AHN" width="300" height="450"></iframe>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1joZo-pbJlJnxdjn32AattA3cFJNV2AHN" ></iframe>
 </div>
 </template>
 
@@ -11,5 +11,18 @@ export default {
 </script>
 
 <style>
+
+iframe{
+  width:300px;
+  height:400px;
+}
+
+@media (orientation: landscape) { 
+
+  iframe{
+      width:500px;
+  height:300px;
+  }
+}
 
 </style>
