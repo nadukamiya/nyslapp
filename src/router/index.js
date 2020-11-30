@@ -24,10 +24,34 @@ const routes = [
     component: () => import ('../views/Date.vue')
   },
   {
-    path: '/location',
-    name: 'Location',
-    component: () => import ('../views/Location.vue')
+    path: '/user',
+    name: 'User',
+    component: () => import ('../views/User.vue')
   },
+  {
+  path: '/location',
+  name: 'Location',
+  component: () => import ('../views/Location.vue')
+},
+{
+  path: '/profile',
+  name: 'Profile',
+  component: () => import ('../views/Profile.vue')
+},
+{
+  path: '/chatroom/:id',
+  name: 'Chatroom',
+  component: () => import ('../views/Chatroom.vue')
+},
+
+{
+  path: '/selectchat',
+  name: 'Selectchat',
+  component: () => import ('../views/Selectchat.vue')
+},
+
+
+
 
 ]
 

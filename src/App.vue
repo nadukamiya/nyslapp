@@ -28,12 +28,30 @@
           </router-link>
           <router-link to="/user">
             <i class="fas fa-user"></i>
+          </router-link>  
+          <router-link to="/selectchat">
+            <i class="fas fa-comments"></i>
           </router-link>    
         </div>
+
         
     </div>
   
 </template>
+
+
+<script>
+import { mapMutations } from 'vuex'
+export default {
+  name:'App',
+  methods:{
+    ...mapMutations(['listenUser']),
+  },
+      beforeMount(){
+      this.listenUser()
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 
@@ -111,6 +129,7 @@ i{
     }
     
   }
+
 
 
   @media (orientation: landscape) { 

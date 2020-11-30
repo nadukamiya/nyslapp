@@ -2,7 +2,8 @@
 <div id="date">
   <div id="calendar">
   <vue-event-calendar :events="demoEvents"></vue-event-calendar>
-  </div>   
+  </div> 
+
 </div>
  
 </template>
@@ -85,7 +86,9 @@ export default {
 }
 </script>
 <style>
-
+*{
+  font-family: 'Nunito', sans-serif;
+}
 #date{
   display: flex;
   justify-content: center;
@@ -94,10 +97,10 @@ export default {
 #calendar{
   position: absolute;
   top:20%;
-  margin-bottom: 10%;
+  margin-bottom: 30vh;
 }
 .events-wrapper {
-    background-color: yellowgreen;
+    background-color:  #7aa326;
 }
 
 @media (min-width: 600px) and (orientation: landscape) { 
