@@ -42,7 +42,6 @@ export default {
 
     methods:{
         post: function(){
-            console.log(this.input)
             let folder = db.ref("forum/match" + this.$route.params.id)
             let message = {
                 body: this.input,
